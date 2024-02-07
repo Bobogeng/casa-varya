@@ -1,9 +1,122 @@
+import { kronaOne } from "./fonts";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+    <main className="min-h-screen">
+      <article className="min-h-screen h-screen p-16 bg-[url('/images/hero-section.jpg')] bg-no-repeat bg-cover bg-center relative">
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <section className="relative z-10 h-full flex flex-col gap-6 justify-center">
+          <h1
+            className={`max-w-[1116px] ${kronaOne.className} text-8xl text-brown leading-normal`}
+          >
+            <span className="text-white">Step into Your</span> European Luxury
+            Lifestyle<span className="text-white">.</span>
+          </h1>
+          <p className="absolute bottom-0 right-0 z-10 font-bold text-gray-400 text-end">
+            By Mudaya Land, in association with Tamara group
+          </p>
+        </section>
+      </article>
+      <article>
+        <section className="p-16">
+          <h1
+            className={`${kronaOne.className} text-black text-7xl leading-normal`}
+          >
+            <span className="text-brown">A place</span> where elegance begins
+            and endures<span className="text-brown">.</span>
+          </h1>
+        </section>
+        <section className="flex bg-[url('/images/hero-section.jpg')] bg-no-repeat bg-cover bg-center relative">
+          <div className="absolute inset-0 bg-black bg-opacity-80 backdrop-filter backdrop-blur-2xl"></div>
+          <div className="flex-1 z-10">
+            <div className="grid grid-rows-3 grid-cols-2 font-bold text-2xl text-white">
+              <div className="p-6 pl-16 pb-36 h-full border-r-2 border-b-2 border-solid border-brown border-opacity-50">
+                <p>Luxury Design</p>
+              </div>
+              <div className="p-6 pl-16 pb-36 border-b-2 border-solid border-brown border-opacity-50">
+                <p>Located at the core of West Jakarta</p>
+              </div>
+              <div className="p-6 pl-16 pb-36 border-r-2 border-b-2 border-solid border-brown border-opacity-50">
+                <p>Community Park</p>
+              </div>
+              <div className="p-6 pl-16 pb-36 border-b-2 border-solid border-brown border-opacity-50">
+                <p>One-Gate System</p>
+              </div>
+              <div className="p-6 pl-16">
+                <p>24/7 Security Monitoring</p>
+              </div>
+            </div>
+          </div>
+          <div className="relative flex-1">
+            <Image
+              className="object-cover object-[0px_85%]"
+              src="/images/place-image.jpg"
+              alt="Place Image"
+              fill={true}
+            />
+          </div>
+        </section>
+      </article>
+      <article>
+        <section className="flex flex-col gap-12 p-40">
+          <div className="grid grid-cols-2 gap-6">
+            <h1
+              className={`${kronaOne.className} text-black text-4xl leading-normal`}
+            >
+              <span className="text-brown">An upscale neighborhood</span>{" "}
+              surrounded by <b>all-rounded facilities</b> for your{" "}
+              <b>on the go life</b>
+            </h1>
+            <p className="self-end">
+              Mudaya Land is a renowned developer dedicated to crafting Casa
+              Varya as a minimalist residential community that combines a touch
+              of European grandeur, tailored for families or young individuals
+              seeking an elegant, affordable and cozy home.
+            </p>
+          </div>
+          <div className="flex flex-col items-center gap-12">
+            <div className="relative w-3/4 h-[800px] rounded-2xl overflow-hidden">
+              <Image
+                className="object-cover"
+                src="/images/maps.jpg"
+                alt="Maps"
+                fill={true}
+              />
+            </div>
+            <div className="relative max-w-[1002px] w-full h-[300px]">
+              <Image
+                className="object-contain"
+                src="/images/neighborhood.png"
+                alt="Neighborhood"
+                fill={true}
+              />
+            </div>
+          </div>
+        </section>
+      </article>
+      <article className="bg-black h-[758px]">
+        <section className="p-16">
+          <h1
+            className={`${kronaOne.className} text-white text-6xl text-center leading-normal`}
+          >
+            <span className="text-brown">The Gateway</span> to Your{" "}
+            <span className="text-brown">European Lifestyle</span> - Enjoy Your{" "}
+            <span className="text-brown">Dream Home at Casa Varya</span>.
+          </h1>
+        </section>
+        <section className="w-full h-full">
+          <div className="relative w-full h-full">
+            <Image
+              className="object-cover object-[0px_85%]"
+              src="/images/gallery-1.jpg"
+              alt="Gallery 1"
+              fill={true}
+            />
+          </div>
+        </section>
+      </article>
+      {/* <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
           <code className="font-mono font-bold">app/page.tsx</code>
@@ -107,7 +220,7 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
+      </div> */}
     </main>
   );
 }
