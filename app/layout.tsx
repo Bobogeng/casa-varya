@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { spaceGrotesk } from "./fonts";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.casavarya.com"),
@@ -44,6 +45,7 @@ export default function RootLayout({
       <body className={spaceGrotesk.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
