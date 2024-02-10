@@ -19,7 +19,7 @@ export default function Footer() {
             <Link href={"#"}>Homepage</Link>
           </div>
           <div>
-            <Link href={"#"}>Contact Us</Link>
+            <Link href={"/contact-us"}>Contact Us</Link>
           </div>
         </div>
       </div>
@@ -27,10 +27,15 @@ export default function Footer() {
         <p>Contact Us</p>
         <div className="flex flex-col items-end gap-4 text-end">
           <div className="flex justify-center items-end gap-2">
-            <Link href={"#"}>@casavarya</Link>
+            <Link href={"https://www.instagram.com/casavarya/"} target="_blank">
+              @casavarya
+            </Link>
           </div>
           <div className="col-start-10 col-span-3 flex justify-center items-end gap-2">
-            <Link href={"#"}>
+            <Link
+              href={"https://api.whatsapp.com/send?phone=6281287070548"}
+              target="_blank"
+            >
               <span className="font-bold">+62</span> 812 8707 0548
             </Link>
           </div>
