@@ -58,7 +58,7 @@ export default function Home() {
               <div className="flex flex-col gap-2 p-6 pl-[88px] border-r-2 border-b-2 border-solid border-brown border-opacity-50">
                 <div>
                   <Image
-                    src="/images/park.png"
+                    src="/images/bench.png"
                     alt=""
                     width={78}
                     height={78}
