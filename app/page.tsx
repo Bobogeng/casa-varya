@@ -182,7 +182,7 @@ export default function Home() {
               height={78}
               draggable={false}
             />
-            <p>{`<`}20 minutes to Jakarta Int'l Airport</p>
+            <p>{`<`}20 minutes to Jakarta Int&apos;l Airport</p>
           </div>
           <div className="flex items-center p-6 gap-2 bg-beige border-solid border-[1px] border-brown">
             <Image
