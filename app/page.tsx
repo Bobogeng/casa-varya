@@ -108,9 +108,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="relative flex-1">
+          <div className="relative flex-1 overflow-hidden">
             <Image
-              className="object-cover object-[0px_85%]"
+              className="object-cover object-[0px_85%] transition-all ease-out duration-1000 hover:scale-125"
               src="/images/place-image.jpg"
               alt="Place Image"
               fill={true}
@@ -123,7 +123,7 @@ export default function Home() {
         <section className="grid grid-cols-2 items-center">
           <div className="relative h-[700px] overflow-hidden">
             <Image
-              className="object-cover"
+              className="object-cover transition-all ease-out duration-1000 hover:scale-125"
               src="/images/maps.jpg"
               alt="Maps"
               fill={true}
@@ -307,7 +307,7 @@ export default function Home() {
           <div className="grid grid-cols-4">
             <div className="w-full relative">
               <Image
-                className="object-contain"
+                className="object-contain transition-all ease-out hover:scale-105"
                 src="/images/facilities.png"
                 alt="Facilities"
                 fill={true}
