@@ -20,14 +20,14 @@ export const metadata: Metadata = {
     description:
       "Mudaya Land is a renowned developer dedicated to crafting Casa Varya as a minimalist residential community that combines a touch of European grandeur, tailored for small families or young individuals seeking an elegant, affordable and cozy home.",
     siteName: "Casa Varya Residences by Mudaya Land",
-    images: { url: "/images/og-images.png", width: 1500, height: 375 },
+    images: { url: "/images/og-images.png" },
   },
   twitter: {
     card: "summary_large_image",
     title: "Casa Varya Residences by Mudaya Land",
     description:
       "Mudaya Land is a renowned developer dedicated to crafting Casa Varya as a minimalist residential community that combines a touch of European grandeur, tailored for small families or young individuals seeking an elegant, affordable and cozy home.",
-    images: { url: "/images/og-images.png", width: 1500, height: 375 },
+    images: { url: "/images/og-images.png" },
   },
 };
 
