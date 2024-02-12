@@ -18,7 +18,7 @@ export default function Button({
   return (
     <button
       className={`${
-        full ? "w-full" : "w-full sm:w-fit"
+        full ? "w-full" : "w-fit"
       } px-6 py-3 flex items-center gap-4 rounded-full ${
         secondary
           ? "bg-black bg-opacity-80 hover:bg-opacity-100 active:bg-brown text-white"
@@ -35,7 +35,7 @@ export default function Button({
         className={`flex items-center gap-2 ${
           full
             ? "w-full justify-between"
-            : "w-full lg:w-fit lg:justify-start justify-between"
+            : "w-fit lg:justify-start justify-between"
         }`}
       >
         <p className="w-full font-bold lg:text-4xl text-lg">{children}</p>

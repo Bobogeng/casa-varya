@@ -3,6 +3,7 @@ import { kronaOne } from "./fonts";
 import Image from "next/image";
 import ButtonAction from "@/components/ButtonAction";
 import HouseTypes from "@/components/HouseTypes";
+import ContactUs from "@/components/ContactUs";
 
 export default function Home() {
   return (
@@ -34,7 +35,7 @@ export default function Home() {
           <div className="flex-1 z-10 lg:order-1 order-2">
             <div className="flex flex-col sm:grid sm:grid-rows-3 sm:grid-cols-2 lg:text-2xl text-lg text-white">
               <div className="lg:pl-[88px] h-full sm:border-r-2 border-b-2 border-solid border-brown border-opacity-50 overflow-hidden">
-                <div className="flex flex-col gap-2 p-6 transition-all ease-out hover:scale-105">
+                <div className="flex flex-col justify-center sm:flex-row items-center lg:flex-col gap-2 p-6 text-center transition-all ease-out hover:scale-105">
                   <div>
                     <Image
                       src="/images/house.png"
@@ -48,7 +49,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="border-b-2 border-solid border-brown border-opacity-50 overflow-hidden">
-                <div className="flex flex-col gap-2 p-6 transition-all ease-out hover:scale-105">
+                <div className="flex flex-col justify-center sm:flex-row items-center lg:flex-col gap-2 p-6 text-center transition-all ease-out hover:scale-105">
                   <div>
                     <Image
                       src="/images/map.png"
@@ -64,7 +65,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="lg:pl-[88px] sm:border-r-2 border-b-2 border-solid border-brown border-opacity-50 overflow-hidden">
-                <div className="flex flex-col gap-2 p-6 transition-all ease-out hover:scale-105">
+                <div className="flex flex-col justify-center sm:flex-row items-center lg:flex-col gap-2 p-6 text-center transition-all ease-out hover:scale-105">
                   <div>
                     <Image
                       src="/images/bench.png"
@@ -78,7 +79,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="border-b-2 border-solid border-brown border-opacity-50 overflow-hidden">
-                <div className="flex flex-col gap-2 p-6 transition-all ease-out hover:scale-105">
+                <div className="flex flex-col justify-center sm:flex-row items-center lg:flex-col gap-2 p-6 text-center transition-all ease-out hover:scale-105">
                   <div>
                     <Image
                       src="/images/gate.png"
@@ -92,7 +93,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-span-2 overflow-hidden">
-                <div className="flex items-center gap-2 p-6 lg:pl-[88px] transition-all ease-out hover:scale-105">
+                <div className="flex flex-col justify-center sm:flex-row items-center gap-2 p-6 lg:pl-[88px] text-center transition-all ease-out hover:scale-105">
                   <div>
                     <Image
                       src="/images/officer.png"
@@ -432,6 +433,7 @@ export default function Home() {
           <SwiperGallery />
         </section>
       </article>
+      <ContactUs />
     </main>
   );
 }

@@ -36,7 +36,7 @@ export default function Footer() {
               href={"https://api.whatsapp.com/send?phone=6281287070548"}
               target="_blank"
             >
-              <span className="font-bold">+62</span> 812 8707 0548
+              <span className="font-bold">+62</span> 878 0827 0698
             </Link>
           </div>
         </div>

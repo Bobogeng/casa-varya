@@ -1,10 +1,10 @@
 "use client";
 import InputFieldIcon from "@/components/InputFieldIcon";
-import { kronaOne } from "../fonts";
 import TextAreaField from "@/components/TextAreaField";
 import Button from "../../components/Button/index";
 import ButtonAction from "@/components/ButtonAction";
 import Image from "next/image";
+import { kronaOne } from "@/app/fonts";
 
 export default function ContactUs() {
   return (
@@ -24,7 +24,11 @@ export default function ContactUs() {
               <p className="text-xl text-white text-opacity-50 leading-normal">
                 Reach out to us today and let our expert team guide you towards
                 your perfect European luxury lifestyle. Contact us now to turn
-                your dream into reality.
+                your dream into reality.{" "}
+                <span className="text-white text-opacity-100">
+                  Call to Action for booking fee (20 Million Rupiah)
+                </span>
+                .
               </p>
             </div>
             <div className="grid grid-cols-3 gap-6">
