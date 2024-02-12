@@ -451,7 +451,7 @@ export default function Home() {
         <section className="sm:pb-16">
           <SwiperGallery />
         </section>
-        <section className="bg-beige flex flex-col items-center p-6 sm:p-16 sm:gap-12 gap-6">
+        <section className="bg-beige flex flex-col items-center p-6 sm:p-16 sm:gap-12 gap-4">
           <p
             className={`max-w-[1002px] font-display text-brown lg:text-3xl text-xl text-center lg:leading-normal leading-normal`}
           >
