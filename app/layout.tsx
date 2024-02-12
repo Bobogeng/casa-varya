@@ -43,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${kronaOne.variable}`}>
-      <body>
+      <body className="text-black">
         <Navbar />
         {children}
         <Footer />
