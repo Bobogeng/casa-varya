@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-black p-16 grid grid-cols-12 gap-6 text-white">
+    <footer className="bg-black lg:p-16 p-6 flex flex-col lg:grid lg:grid-cols-12 gap-6 text-white">
       <div className="col-span-3 flex flex-col gap-6">
         <p className={`${kronaOne.className} text-xl`}>Marketing Gallery</p>
         <p>
@@ -23,15 +23,15 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="col-start-10 col-span-3 flex flex-col items-end gap-6">
-        <p>Contact Us</p>
-        <div className="flex flex-col items-end gap-4 text-end">
-          <div className="flex justify-center items-end gap-2">
+      <div className="col-start-10 col-span-3 flex flex-col lg:items-end gap-6">
+        <p className={`${kronaOne.className} text-xl`}>Contact Us</p>
+        <div className="flex flex-col lg:items-end gap-4 lg:text-end">
+          <div className="flex lg:justify-center items-end gap-2">
             <Link href={"https://www.instagram.com/casavarya/"} target="_blank">
               @casavarya
             </Link>
           </div>
-          <div className="col-start-10 col-span-3 flex justify-center items-end gap-2">
+          <div className="col-start-10 col-span-3 flex lg:justify-center lg:items-end gap-2">
             <Link
               href={"https://api.whatsapp.com/send?phone=6281287070548"}
               target="_blank"
@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="col-span-3 flex items-center gap-2">
+      <div className="col-span-3 flex justify-center lg:justify-start items-center gap-2">
         <div>
           <Image
             className="pointer-events-none select-none"
@@ -56,12 +56,12 @@ export default function Footer() {
         </p>
       </div>
       <div className="col-start-5 col-span-3">
-        <p className="text-white text-opacity-50 font-bold">
+        <p className="text-white lg:text-start text-center text-opacity-50 font-bold">
           © Casa Varya 2024
         </p>
       </div>
       <div className="col-start-10 col-span-3">
-        <p className="text-white text-opacity-50 font-bold text-end">
+        <p className="text-white text-opacity-50 font-bold lg:text-end text-center">
           By Mudaya Land, in association with Tamara group
         </p>
       </div>

@@ -29,21 +29,23 @@ export default function HouseTypes() {
 
   return (
     <article className="bg-beige">
-      <section className="grid grid-cols-3 gap-6 p-16 text-brown">
+      <section className="flex flex-col lg:grid lg:grid-cols-3 gap-6 lg:p-16 p-6 text-brown">
         <div className="flex flex-col justify-center gap-6">
           <h1
-            className={`${kronaOne.className} text-5xl leading-normal uppercase`}
+            className={`${kronaOne.className} lg:text-5xl text-xl leading-normal uppercase`}
           >
             House Type
           </h1>
-          <p className="text-xl leading-normal">
+          <p className="lg:text-xl text-base leading-normal">
             Indulge in European luxury living with this exquisite abode.
           </p>
           {houseTypes.map((house, i) => {
             if (house.type === selectedHouse.type) {
               return (
                 <Button
-                  leadingIcon={<p className="font-bold text-4xl">{i}</p>}
+                  leadingIcon={
+                    <p className="font-bold lg:text-4xl text-lg">{i}</p>
+                  }
                   full
                   onClick={() => handleHouseSelect(i)}
                   key={i}
@@ -55,7 +57,9 @@ export default function HouseTypes() {
             } else {
               return (
                 <Button
-                  leadingIcon={<p className="font-bold text-4xl">{i}</p>}
+                  leadingIcon={
+                    <p className="font-bold lg:text-4xl text-lg">{i}</p>
+                  }
                   secondary
                   full
                   onClick={() => handleHouseSelect(i)}
@@ -68,7 +72,9 @@ export default function HouseTypes() {
           })}
         </div>
         {selectedHouse && (
-          <div className={`h-[700px] grid grid-cols-2 gap-2`}>
+          <div
+            className={`h-[256px] sm:h-[430px] md:h-[500px] lg:h-[700px] grid grid-cols-2 gap-2`}
+          >
             <div className="w-full relative">
               <Image
                 className="object-contain"
@@ -96,45 +102,51 @@ export default function HouseTypes() {
             >
               {selectedHouse.type}
             </h2>
-            <div className="flex items-center gap-2">
-              <div>
-                <Image
-                  src="/images/bed.png"
-                  alt="Bed"
-                  width={78}
-                  height={78}
-                  draggable={false}
-                />
+            <div className="flex flex-wrap sm:flex-row items-center gap-2">
+              <div className="flex items-center gap-2">
+                <div>
+                  <Image
+                    src="/images/bed.png"
+                    alt="Bed"
+                    width={78}
+                    height={78}
+                    draggable={false}
+                  />
+                </div>
+                <p className="flex justify-center items-center w-8 h-8 rounded-full bg-brown text-white text-xl font-bold text-center">
+                  {selectedHouse.bed}
+                </p>
               </div>
-              <p className="flex justify-center items-center w-8 h-8 rounded-full bg-brown text-white text-xl font-bold text-center">
-                {selectedHouse.bed}
-              </p>
-              <div>
-                <Image
-                  src="/images/car.png"
-                  alt="Car"
-                  width={78}
-                  height={78}
-                  draggable={false}
-                />
+              <div className="flex items-center gap-2">
+                <div>
+                  <Image
+                    src="/images/car.png"
+                    alt="Car"
+                    width={78}
+                    height={78}
+                    draggable={false}
+                  />
+                </div>
+                <p className="flex justify-center items-center w-8 h-8 rounded-full bg-brown text-white text-xl font-bold text-center">
+                  {selectedHouse.car}
+                </p>
               </div>
-              <p className="flex justify-center items-center w-8 h-8 rounded-full bg-brown text-white text-xl font-bold text-center">
-                {selectedHouse.car}
-              </p>
-              <div>
-                <Image
-                  src="/images/bath.png"
-                  alt="Bath"
-                  width={78}
-                  height={78}
-                  draggable={false}
-                />
+              <div className="flex items-center gap-2">
+                <div>
+                  <Image
+                    src="/images/bath.png"
+                    alt="Bath"
+                    width={78}
+                    height={78}
+                    draggable={false}
+                  />
+                </div>
+                <p className="flex justify-center items-center w-8 h-8 rounded-full bg-brown text-white lg:text-xl text-base font-bold text-center">
+                  {selectedHouse.bath}
+                </p>
               </div>
-              <p className="flex justify-center items-center w-8 h-8 rounded-full bg-brown text-white text-xl font-bold text-center">
-                {selectedHouse.bath}
-              </p>
             </div>
-            <div className="flex gap-2">
+            <div className="flex lg:flex-row flex-col gap-2">
               <div className="flex-1 flex flex-col gap-2">
                 <h3
                   className={`${kronaOne.className} text-2xl leading-normal uppercase`}

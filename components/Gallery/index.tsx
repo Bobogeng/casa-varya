@@ -13,7 +13,7 @@ export default function Gallery({
       style={{ backgroundImage: `url('${src}')` }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-      <p className={`${kronaOne.className} text-white text-xl self-end`}>
+      <p className={`${kronaOne.className} text-white text-xl self-end z-10`}>
         {title}
       </p>
     </div>
