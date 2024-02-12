@@ -37,3 +37,34 @@ body {
     text-wrap: balance;
   }
 }
+
+.swiper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  display: flex !important;
+  opacity: 0.5;
+  transform: scale(0.84) !important;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide.swiper-slide-active {
+  transform: scale(1) !important;
+  opacity: 1 !important;
+}
+
+::-webkit-resizer {
+  display: block;
+}
+
+textarea {
+  background: url("/icons/resize-bottom-right.svg") no-repeat calc(100% - 4px)
+    calc(100% - 4px);
+  background-size: 24px;
+}

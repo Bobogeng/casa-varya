@@ -44,6 +44,7 @@ export default function Footer() {
       <div className="col-span-3 flex items-center gap-2">
         <div>
           <Image
+            className="pointer-events-none select-none"
             src={"/images/rw-logo-2017.jpg"}
             alt=""
             width={48}

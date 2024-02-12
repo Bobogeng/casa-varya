@@ -1,12 +1,13 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import "swiper/css";
 import { spaceGrotesk } from "./fonts";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.casavarya.com"),
-  title: { default: "Casa Varya", template: "%s | " },
+  title: { default: "Casa Varya Residences by Mudaya Land", template: "%s | " },
   description:
     "Mudaya Land is a renowned developer dedicated to crafting Casa Varya as a minimalist residential community that combines a touch of European grandeur, tailored for small families or young individuals seeking an elegant, affordable and cozy home.",
   keywords:

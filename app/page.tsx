@@ -1,5 +1,9 @@
+import SwiperGallery from "@/components/SwiperGallery";
 import { kronaOne } from "./fonts";
 import Image from "next/image";
+import Button from "../components/Button/index";
+import ButtonAction from "@/components/ButtonAction";
+import HouseTypes from "@/components/HouseTypes";
 
 export default function Home() {
   return (
@@ -13,6 +17,7 @@ export default function Home() {
             <span className="text-white">Step into Your</span> European Luxury
             Lifestyle<span className="text-white">.</span>
           </h1>
+          <ButtonAction action="whatsapp" />
           <p className="absolute bottom-0 right-0 z-10 font-bold text-gray-400 text-end">
             By Mudaya Land, in association with Tamara group
           </p>
@@ -29,67 +34,77 @@ export default function Home() {
           <div className="absolute inset-0 bg-black bg-opacity-80 backdrop-filter backdrop-blur-2xl"></div>
           <div className="flex-1 z-10">
             <div className="grid grid-rows-3 grid-cols-2 text-2xl text-white">
-              <div className="flex flex-col gap-2 p-6 pl-[88px] h-full border-r-2 border-b-2 border-solid border-brown border-opacity-50">
-                <div>
-                  <Image
-                    src="/images/house.png"
-                    alt=""
-                    width={78}
-                    height={78}
-                    draggable="false"
-                  />
+              <div className="pl-[88px] h-full border-r-2 border-b-2 border-solid border-brown border-opacity-50">
+                <div className="flex flex-col gap-2 p-6 transition-all ease-out hover:scale-105">
+                  <div>
+                    <Image
+                      src="/images/house.png"
+                      alt=""
+                      width={78}
+                      height={78}
+                      draggable="false"
+                    />
+                  </div>
+                  <p className="leading-normal">Luxury Design</p>
                 </div>
-                <p className="leading-normal">Luxury Design</p>
               </div>
-              <div className="flex flex-col gap-2 p-6 border-b-2 border-solid border-brown border-opacity-50">
-                <div>
-                  <Image
-                    src="/images/map.png"
-                    alt=""
-                    width={78}
-                    height={78}
-                    draggable="false"
-                  />
+              <div className="border-b-2 border-solid border-brown border-opacity-50">
+                <div className="flex flex-col gap-2 p-6 transition-all ease-out hover:scale-105">
+                  <div>
+                    <Image
+                      src="/images/map.png"
+                      alt=""
+                      width={78}
+                      height={78}
+                      draggable="false"
+                    />
+                  </div>
+                  <p className="leading-normal">
+                    Located at the core of West Jakarta
+                  </p>
                 </div>
-                <p className="leading-normal">
-                  Located at the core of West Jakarta
-                </p>
               </div>
-              <div className="flex flex-col gap-2 p-6 pl-[88px] border-r-2 border-b-2 border-solid border-brown border-opacity-50">
-                <div>
-                  <Image
-                    src="/images/bench.png"
-                    alt=""
-                    width={78}
-                    height={78}
-                    draggable="false"
-                  />
+              <div className="pl-[88px] border-r-2 border-b-2 border-solid border-brown border-opacity-50">
+                <div className="flex flex-col gap-2 p-6 transition-all ease-out hover:scale-105">
+                  <div>
+                    <Image
+                      src="/images/bench.png"
+                      alt=""
+                      width={78}
+                      height={78}
+                      draggable="false"
+                    />
+                  </div>
+                  <p className="leading-normal">Community Park</p>
                 </div>
-                <p className="leading-normal">Community Park</p>
               </div>
-              <div className="flex flex-col gap-2 p-6 border-b-2 border-solid border-brown border-opacity-50">
-                <div>
-                  <Image
-                    src="/images/gate.png"
-                    alt=""
-                    width={78}
-                    height={78}
-                    draggable="false"
-                  />
+              <div className="border-b-2 border-solid border-brown border-opacity-50">
+                <div className="flex flex-col gap-2 p-6 transition-all ease-out hover:scale-105">
+                  <div>
+                    <Image
+                      src="/images/gate.png"
+                      alt=""
+                      width={78}
+                      height={78}
+                      draggable="false"
+                    />
+                  </div>
+                  <p className="leading-normal">One-Gate System</p>
                 </div>
-                <p className="leading-normal">One-Gate System</p>
               </div>
-              <div className="col-span-2 flex items-center gap-2 p-6 pl-[88px]">
-                <div>
-                  <Image
-                    src="/images/officer.png"
-                    alt=""
-                    width={78}
-                    height={78}
-                    draggable="false"
-                  />
+              <div className="col-span-2">
+                <div className="flex items-center gap-2 p-6 pl-[88px] transition-all ease-out hover:scale-105">
+                  <div>
+                    <Image
+                      src="/images/officer.png"
+                      alt=""
+                      width={78}
+                      height={78}
+                      draggable="false"
+                    />
+                  </div>
+                  <p className="leading-normal">24/7 Security Monitoring</p>
                 </div>
-                <p className="leading-normal">24/7 Security Monitoring</p>
               </div>
             </div>
           </div>
@@ -144,115 +159,137 @@ export default function Home() {
             />
             <p>Maps Label</p>
           </div>
-          <div className="flex items-center p-6 gap-2 bg-beige border-solid border-[1px] border-brown">
-            <Image
-              src="/images/highway.png"
-              alt=""
-              width={78}
-              height={78}
-              draggable={false}
-            />
-            <p>{`<`}1,500 meters to Tolls/Highway</p>
+          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
+            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+              <Image
+                src="/images/highway.png"
+                alt=""
+                width={78}
+                height={78}
+                draggable={false}
+              />
+              <p>{`<`}1,500 meters to Tolls/Highway</p>
+            </div>
           </div>
-          <div className="flex items-center p-6 gap-2 bg-beige border-solid border-[1px] border-brown">
-            <Image
-              src="/images/police.png"
-              alt=""
-              width={78}
-              height={78}
-              draggable={false}
-            />
-            <p>{`<`}1,800 meters to nearest District Police</p>
+          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
+            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+              <Image
+                src="/images/police.png"
+                alt=""
+                width={78}
+                height={78}
+                draggable={false}
+              />
+              <p>{`<`}1,800 meters to nearest District Police</p>
+            </div>
           </div>
-          <div className="flex items-center p-6 gap-2 bg-beige border-solid border-[1px] border-brown">
-            <Image
-              src="/images/church.png"
-              alt=""
-              width={78}
-              height={78}
-              draggable={false}
-            />
-            <p>{`<`}300 meters to nearest Church</p>
+          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
+            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+              <Image
+                src="/images/church.png"
+                alt=""
+                width={78}
+                height={78}
+                draggable={false}
+              />
+              <p>{`<`}300 meters to nearest Church</p>
+            </div>
           </div>
-          <div className="flex items-center p-6 gap-2 bg-beige border-solid border-[1px] border-brown">
-            <Image
-              src="/images/plane.png"
-              alt=""
-              width={78}
-              height={78}
-              draggable={false}
-            />
-            <p>{`<`}20 minutes to Jakarta Int&apos;l Airport</p>
+          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
+            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+              <Image
+                src="/images/plane.png"
+                alt=""
+                width={78}
+                height={78}
+                draggable={false}
+              />
+              <p>{`<`}20 minutes to Jakarta Int&apos;l Airport</p>
+            </div>
           </div>
-          <div className="flex items-center p-6 gap-2 bg-beige border-solid border-[1px] border-brown">
-            <Image
-              src="/images/bank.png"
-              alt=""
-              width={78}
-              height={78}
-              draggable={false}
-            />
-            <p>{`<`}200 meters to nearest ATM/Bank</p>
+          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
+            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+              <Image
+                src="/images/bank.png"
+                alt=""
+                width={78}
+                height={78}
+                draggable={false}
+              />
+              <p>{`<`}200 meters to nearest ATM/Bank</p>
+            </div>
           </div>
-          <div className="flex items-center p-6 gap-2 bg-beige border-solid border-[1px] border-brown">
-            <Image
-              src="/images/mosque.png"
-              alt=""
-              width={78}
-              height={78}
-              draggable={false}
-            />
-            <p>{`<`}300 meters to nearest Mosque</p>
+          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
+            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+              <Image
+                src="/images/mosque.png"
+                alt=""
+                width={78}
+                height={78}
+                draggable={false}
+              />
+              <p>{`<`}300 meters to nearest Mosque</p>
+            </div>
           </div>
-          <div className="flex items-center p-6 gap-2 bg-beige border-solid border-[1px] border-brown">
-            <Image
-              src="/images/city.png"
-              alt=""
-              width={78}
-              height={78}
-              draggable={false}
-            />
-            <p>{`<`}60 minutes to SCBD/City Center</p>
+          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
+            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+              <Image
+                src="/images/city.png"
+                alt=""
+                width={78}
+                height={78}
+                draggable={false}
+              />
+              <p>{`<`}60 minutes to SCBD/City Center</p>
+            </div>
           </div>
-          <div className="flex items-center p-6 gap-2 bg-beige border-solid border-[1px] border-brown">
-            <Image
-              src="/images/hospital.png"
-              alt=""
-              width={78}
-              height={78}
-              draggable={false}
-            />
-            <p>{`<`}1,700 meters to nearest Hospital</p>
+          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
+            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+              <Image
+                src="/images/hospital.png"
+                alt=""
+                width={78}
+                height={78}
+                draggable={false}
+              />
+              <p>{`<`}1,700 meters to nearest Hospital</p>
+            </div>
           </div>
-          <div className="flex items-center p-6 gap-2 bg-beige border-solid border-[1px] border-brown">
-            <Image
-              src="/images/cart.png"
-              alt=""
-              width={78}
-              height={78}
-              draggable={false}
-            />
-            <p>{`<`}750 meters to Convenience Store</p>
+          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
+            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+              <Image
+                src="/images/cart.png"
+                alt=""
+                width={78}
+                height={78}
+                draggable={false}
+              />
+              <p>{`<`}750 meters to Convenience Store</p>
+            </div>
           </div>
-          <div className="flex items-center p-6 gap-2 bg-beige border-solid border-[1px] border-brown">
-            <Image
-              src="/images/school.png"
-              alt=""
-              width={78}
-              height={78}
-              draggable={false}
-            />
-            <p>{`<`}600 meters to School</p>
+          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
+            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+              <Image
+                src="/images/school.png"
+                alt=""
+                width={78}
+                height={78}
+                draggable={false}
+              />
+              <p>{`<`}600 meters to School</p>
+            </div>
           </div>
-          <div className="flex items-center p-6 gap-2 bg-beige border-solid border-[1px] border-brown">
-            <Image
-              src="/images/park.png"
-              alt=""
-              width={78}
-              height={78}
-              draggable={false}
-            />
-            <p>{`<`}350 meters to Kids Friendly Park</p>
+          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
+            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+              <Image
+                src="/images/park.png"
+                alt=""
+                width={78}
+                height={78}
+                draggable={false}
+              />
+              <p>{`<`}350 meters to Kids Friendly Park</p>
+            </div>
           </div>
         </section>
       </article>
@@ -278,61 +315,61 @@ export default function Home() {
               />
             </div>
             <div className="col-span-3 grid grid-cols-2 gap-2 text-brown">
-              <div className="flex flex-col p-6 gap-4 bg-beige">
+              <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105">
                 <h2 className={`${kronaOne.className} text-xl uppercase`}>
                   Foundation
                 </h2>
                 <p className="font-medium">Concrete pile</p>
               </div>
-              <div className="flex flex-col p-6 gap-4 bg-beige">
+              <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105">
                 <h2 className={`${kronaOne.className} text-xl uppercase`}>
                   Structure
                 </h2>
                 <p className="font-medium">Reinforced concrete</p>
               </div>
-              <div className="flex flex-col p-6 gap-4 bg-beige">
+              <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105">
                 <h2 className={`${kronaOne.className} text-xl uppercase`}>
                   Wall
                 </h2>
                 <p className="font-medium">Hebel brick masonry plus cement</p>
               </div>
-              <div className="flex flex-col p-6 gap-4 bg-beige">
+              <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105">
                 <h2 className={`${kronaOne.className} text-xl uppercase`}>
                   Plafond
                 </h2>
                 <p className="font-medium">Painted gypsum board</p>
               </div>
-              <div className="flex flex-col p-6 gap-4 bg-beige">
+              <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105">
                 <h2 className={`${kronaOne.className} text-xl uppercase`}>
                   Roof Structure
                 </h2>
                 <p className="font-medium">Light steel</p>
               </div>
-              <div className="flex flex-col p-6 gap-4 bg-beige">
+              <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105">
                 <h2 className={`${kronaOne.className} text-xl uppercase`}>
                   Roof
                 </h2>
                 <p className="font-medium">Concrete roof tile</p>
               </div>
-              <div className="flex flex-col p-6 gap-4 bg-beige">
+              <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105">
                 <h2 className={`${kronaOne.className} text-xl uppercase`}>
                   Floor
                 </h2>
                 <p className="font-medium">Granite tile & ceramic</p>
               </div>
-              <div className="flex flex-col p-6 gap-4 bg-beige">
+              <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105">
                 <h2 className={`${kronaOne.className} text-xl uppercase`}>
                   Doors
                 </h2>
                 <p className="font-medium">Solid engineering, aluminum frame</p>
               </div>
-              <div className="flex flex-col p-6 gap-4 bg-beige">
+              <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105">
                 <h2 className={`${kronaOne.className} text-xl uppercase`}>
                   Sanitaire
                 </h2>
                 <p className="font-medium">Toilet seat (ex. Toto)</p>
               </div>
-              <div className="flex flex-col p-6 gap-4 bg-beige">
+              <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105">
                 <h2 className={`${kronaOne.className} text-xl uppercase`}>
                   Water Supply
                 </h2>
@@ -364,117 +401,7 @@ export default function Home() {
           </div>
         </section>
       </article>
-      <article className="bg-beige">
-        <section className="grid grid-cols-3 gap-6 p-16 text-brown">
-          <div className="flex flex-col gap-6">
-            <h1
-              className={`${kronaOne.className} text-5xl leading-normal uppercase`}
-            >
-              House Type
-            </h1>
-            <p className="text-xl leading-normal">
-              Indulge in European luxury living with this exquisite abode.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 gap-2">
-            <div className="w-full relative">
-              <Image
-                className="object-contain"
-                src="/images/basic-1.png"
-                alt="Basic Image 1"
-                fill={true}
-                draggable={false}
-              />
-            </div>
-            <div className="w-full relative">
-              <Image
-                className="object-contain"
-                src="/images/basic-2.png"
-                alt="Basic Image 2"
-                fill={true}
-                draggable={false}
-              />
-            </div>
-          </div>
-          <div className="flex flex-col justify-center gap-6">
-            <h2
-              className={`${kronaOne.className} text-4xl leading-normal uppercase`}
-            >
-              Basic Type
-            </h2>
-            <div className="flex items-center gap-2">
-              <div>
-                <Image
-                  src="/images/bed.png"
-                  alt="Bed"
-                  width={78}
-                  height={78}
-                  draggable={false}
-                />
-              </div>
-              <p className="flex justify-center items-center w-8 h-8 rounded-full bg-brown text-white text-xl font-bold text-center">
-                2
-              </p>
-              <div>
-                <Image
-                  src="/images/car.png"
-                  alt="Car"
-                  width={78}
-                  height={78}
-                  draggable={false}
-                />
-              </div>
-              <p className="flex justify-center items-center w-8 h-8 rounded-full bg-brown text-white text-xl font-bold text-center">
-                3
-              </p>
-              <div>
-                <Image
-                  src="/images/bath.png"
-                  alt="Bath"
-                  width={78}
-                  height={78}
-                  draggable={false}
-                />
-              </div>
-              <p className="flex justify-center items-center w-8 h-8 rounded-full bg-brown text-white text-xl font-bold text-center">
-                2
-              </p>
-            </div>
-            <div className="flex gap-2">
-              <div className="flex-1 flex flex-col gap-2">
-                <h3
-                  className={`${kronaOne.className} text-2xl leading-normal uppercase`}
-                >
-                  1st Floor
-                </h3>
-                <ul className="flex flex-col pl-2 gap-2 list-disc list-inside font-medium">
-                  <li>Carport</li>
-                  <li>Living Room</li>
-                  <li>Dining Room</li>
-                  <li>Kitchen</li>
-                  <li>Bathroom 1</li>
-                  <li>Terrace</li>
-                  <li>Garden</li>
-                </ul>
-              </div>
-              <div className="flex-1 flex flex-col gap-2">
-                <h3
-                  className={`${kronaOne.className} text-2xl leading-normal uppercase`}
-                >
-                  2nd Floor
-                </h3>
-                <ul className="flex flex-col pl-2 gap-2 list-disc list-inside font-medium">
-                  <li>Master Bedroom</li>
-                  <li>Master Bathroom</li>
-                  <li>Bathroom 2</li>
-                  <li>Corridor</li>
-                  <li>Balcony</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-      </article>
+      <HouseTypes />
       <article className={`${kronaOne.className}`}>
         <section className="p-16">
           <h1 className="text-black text-5xl text-center leading-normal">
@@ -483,7 +410,9 @@ export default function Home() {
             Dream <span className="text-brown">Home at Casa Varya</span>.
           </h1>
         </section>
-        <section></section>
+        <section className="pb-16">
+          <SwiperGallery />
+        </section>
       </article>
     </main>
   );
