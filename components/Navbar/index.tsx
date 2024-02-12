@@ -8,7 +8,7 @@ export default function Navbar() {
         <Link href="/">
           <div className="relative lg:w-[200px] w-[128px] lg:h-[64px] h-[32px]">
             <Image
-              className="dark:invert object-contain"
+              className="object-contain"
               src="/images/logo-casa-varya.png"
               alt="Casa Varya Logo"
               fill={true}
