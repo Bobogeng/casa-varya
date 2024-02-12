@@ -1,4 +1,4 @@
-import { kronaOne } from "@/app/fonts";
+import { kronaOne } from "../../app/fonts";
 
 export default function Gallery({
   title,

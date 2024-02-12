@@ -1,5 +1,5 @@
 "use client";
-import { kronaOne } from "@/app/fonts";
+import { kronaOne } from "../../app/fonts";
 import { houseTypes } from "@/utils/houseTypes";
 import Image from "next/image";
 import Button from "../Button";
