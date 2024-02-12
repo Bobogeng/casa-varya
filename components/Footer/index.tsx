@@ -14,17 +14,6 @@ export default function Footer() {
           Jakarta 11830
         </p>
       </div>
-      <div className="col-start-5 col-span-3 flex flex-col gap-6">
-        <p className={`${kronaOne.className} lg:text-xl text-lg`}>More Pages</p>
-        <div className="flex flex-col gap-4">
-          <div>
-            <Link href={"#"}>Homepage</Link>
-          </div>
-          <div>
-            <Link href={"/contact-us"}>Contact Us</Link>
-          </div>
-        </div>
-      </div>
       <div className="col-start-10 col-span-3 flex flex-col lg:items-end gap-6">
         <p className={`${kronaOne.className} lg:text-xl text-lg`}>Contact Us</p>
         <div className="flex flex-col lg:items-end items-center gap-4 lg:text-end text-center">
@@ -73,7 +62,7 @@ export default function Footer() {
           Lead Agent by Ray White Prominence
         </p>
       </div>
-      <div className="col-start-5 col-span-3">
+      <div className="col-start-6 col-span-2 flex justify-center">
         <p className="text-white lg:text-start text-center text-opacity-50 font-bold">
           © Casa Varya 2024
         </p>
