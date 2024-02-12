@@ -1,5 +1,4 @@
 "use client";
-import { kronaOne } from "@/app/fonts";
 import { houseTypes } from "@/utils/houseTypes";
 import Image from "next/image";
 import Button from "../Button";
@@ -21,7 +20,7 @@ export default function HouseTypes() {
       <section className="flex flex-col lg:grid lg:grid-cols-3 lg:gap-6 gap-4 lg:p-16 p-6 text-brown">
         <div className="flex flex-col justify-center lg:gap-6 gap-4">
           <h1
-            className={`${kronaOne.className} lg:text-5xl text-xl lg:leading-normal leading-normal uppercase`}
+            className={`font-display lg:text-5xl text-xl lg:leading-normal leading-normal uppercase`}
           >
             House Type
           </h1>
@@ -91,11 +90,11 @@ export default function HouseTypes() {
         {selectedHouse && (
           <div className="flex flex-col justify-center lg:items-start items-center text-center lg:text-start lg:gap-6 gap-4">
             <h2
-              className={`${kronaOne.className} lg:text-4xl text-xl lg:leading-normal leading-normal uppercase`}
+              className={`font-display lg:text-4xl text-xl lg:leading-normal leading-normal uppercase`}
             >
               {selectedHouse.type}
             </h2>
-            <div className="flex flex-wrap sm:flex-row justify-center items-center gap-2">
+            <div className="flex flex-wrap sm:flex-row lg:justify-start justify-center items-center gap-2">
               <div className="relative flex items-center gap-2">
                 <div className="lg:w-[78px] lg:h-[78px] w-[48px] h-[48px] min-w-[48px] min-h-[48px]">
                   <Image
@@ -139,10 +138,10 @@ export default function HouseTypes() {
                 </p>
               </div>
             </div>
-            <div className="flex sm:flex-row flex-col gap-2">
+            <div className="lg:w-full flex sm:flex-row flex-col gap-2">
               <div className="flex-1 flex flex-col gap-2">
                 <h3
-                  className={`${kronaOne.className} lg:text-2xl text-lg lg:leading-normal leading-normal uppercase`}
+                  className={`font-display lg:text-2xl text-lg lg:leading-normal leading-normal uppercase`}
                 >
                   1st Floor
                 </h3>
@@ -154,7 +153,7 @@ export default function HouseTypes() {
               </div>
               <div className="flex-1 flex flex-col gap-2">
                 <h3
-                  className={`${kronaOne.className} lg:text-2xl text-lg lg:leading-normal leading-normal uppercase`}
+                  className={`font-display lg:text-2xl text-lg lg:leading-normal leading-normal uppercase`}
                 >
                   2nd Floor
                 </h3>

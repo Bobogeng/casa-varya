@@ -23,7 +23,7 @@ export default function ButtonAction({
           </div>
         }
         onClick={() =>
-          window.open("https://api.whatsapp.com/send?phone=6281287070548")
+          window.open("https://api.whatsapp.com/send?phone=6287808270698")
         }
         trailIcon={
           <div className="relative lg:w-[42px] lg:h-[42px] w-[24px] h-[24px] max-w-[42px] max-h-[42px]">
@@ -36,6 +36,7 @@ export default function ButtonAction({
           </div>
         }
         full={full ? true : false}
+        bold
       >
         Whatsapp
       </Button>

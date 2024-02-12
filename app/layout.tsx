@@ -42,7 +42,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${kronaOne.variable}`}>
+    <html
+      lang="en"
+      className={`${spaceGrotesk.variable} ${kronaOne.variable} font-sans`}
+    >
       <body className="text-black">
         <Navbar />
         {children}

@@ -5,6 +5,7 @@ export default function Button({
   active,
   secondary,
   full,
+  bold,
   onClick,
 }: {
   children: React.ReactNode;
@@ -13,6 +14,7 @@ export default function Button({
   active?: boolean;
   secondary?: boolean;
   full?: boolean;
+  bold?: boolean;
   onClick?: () => void;
 }) {
   return (
@@ -38,7 +40,11 @@ export default function Button({
             : "w-fit lg:justify-start justify-between"
         }`}
       >
-        <p className="w-full font-bold xl:text-4xl lg:text-2xl text-lg text-start">
+        <p
+          className={`w-full xl:text-4xl lg:text-2xl text-lg text-start ${
+            bold ? "font-bold" : "font-medium"
+          }`}
+        >
           {children}
         </p>
         {trailIcon}

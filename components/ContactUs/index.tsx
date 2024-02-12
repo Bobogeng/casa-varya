@@ -4,7 +4,6 @@ import TextAreaField from "@/components/TextAreaField";
 import Button from "../../components/Button/index";
 import ButtonAction from "@/components/ButtonAction";
 import Image from "next/image";
-import { kronaOne } from "@/app/fonts";
 
 export default function ContactUs() {
   return (
@@ -16,7 +15,7 @@ export default function ContactUs() {
             <div className="-z-10 absolute inset-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-xl"></div>
             <div className="flex flex-col gap-2">
               <h1
-                className={`${kronaOne.className} lg:text-4xl text-xl text-white lg:leading-normal leading-normal`}
+                className={`font-display lg:text-4xl text-xl text-white lg:leading-normal leading-normal`}
               >
                 Connect with Us for <span className="text-brown">Your</span>{" "}
                 Dream Home.

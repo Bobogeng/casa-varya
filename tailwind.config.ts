@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-spaceGrotesk)"],
+        display: ["var(--font-kronaOne)"],
+      },
       animation: {
         typewriter: "typewriter 2s steps(11) forwards",
         caret:
