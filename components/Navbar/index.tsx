@@ -13,6 +13,7 @@ export default function Navbar() {
               alt="Casa Varya Logo"
               fill={true}
               priority
+              draggable={false}
             />
           </div>
         </Link>
@@ -25,6 +26,7 @@ export default function Navbar() {
             alt=""
             fill={true}
             priority
+            draggable={false}
           />
         </div>
         <p className="lg:w-[112px] w-[64px] lg:h-[112px] h-[64px]">
