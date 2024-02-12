@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import "swiper/css";
-import { spaceGrotesk } from "./fonts";
+import { spaceGrotesk, kronaOne } from "./fonts";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -42,8 +42,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={spaceGrotesk.className}>
+    <html lang="en" className={`${spaceGrotesk.variable} ${kronaOne.variable}`}>
+      <body>
         <Navbar />
         {children}
         <Footer />

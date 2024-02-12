@@ -4,7 +4,7 @@ import TextAreaField from "@/components/TextAreaField";
 import Button from "../../components/Button/index";
 import ButtonAction from "@/components/ButtonAction";
 import Image from "next/image";
-import { kronaOne } from "../../app/fonts";
+import { kronaOne } from "@/app/fonts";
 
 export default function ContactUs() {
   return (

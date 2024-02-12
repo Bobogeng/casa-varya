@@ -11,7 +11,7 @@ export default function Navbar() {
               className="dark:invert object-contain"
               src="/images/logo-casa-varya.png"
               alt="Casa Varya Logo"
-              layout="fill"
+              fill={true}
               priority
             />
           </div>
@@ -23,7 +23,7 @@ export default function Navbar() {
             className="object-cover"
             src={"/images/rw-logo-2017.jpg"}
             alt=""
-            layout="fill"
+            fill={true}
             priority
           />
         </div>
