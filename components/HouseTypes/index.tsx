@@ -3,7 +3,7 @@ import { kronaOne } from "@/app/fonts";
 import { houseTypes } from "@/utils/houseTypes";
 import Image from "next/image";
 import Button from "../Button";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function HouseTypes() {
   const [selectedHouseIndex, setSelectedHouseIndex] = useState(0);
@@ -11,20 +11,9 @@ export default function HouseTypes() {
     houseTypes[selectedHouseIndex]
   );
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setSelectedHouseIndex((prevIndex) => (prevIndex + 1) % houseTypes.length);
-    }, 2500);
-
-    return () => clearInterval(intervalId);
-  }, []);
-
-  useEffect(() => {
-    setSelectedHouse(houseTypes[selectedHouseIndex]);
-  }, [selectedHouseIndex]);
-
   const handleHouseSelect = (houseIndex: number) => {
     setSelectedHouseIndex(houseIndex);
+    setSelectedHouse(houseTypes[houseIndex]);
   };
 
   return (
