@@ -20,19 +20,22 @@ export default function InputFieldIcon({
       className={`relative block ${full ? "w-full" : "w-fit"}`}
       htmlFor={name}
     >
-      <Image
-        className="pointer-events-none absolute top-1/2 transform -translate-y-1/2 left-3 opacity-50"
-        src={src}
-        alt=""
-        width={36}
-        height={36}
-      />
+      <div className="absolute top-1/2 transform -translate-y-1/2 left-3">
+        <div className="relative lg:w-[36px] lg:h-[36px] w-6 h-6">
+          <Image
+            className="pointer-events-none opacity-50"
+            src={src}
+            alt=""
+            fill={true}
+          />
+        </div>
+      </div>
       <input
         name={name}
         id={name}
         className={`${
           full ? "w-full" : "w-fit"
-        } px-4 py-2 pl-14 rounded-lg bg-black bg-opacity-50 text-2xl text-white placeholder:text-opacity-50 outline-none caret-gray-400 hover:bg-opacity-75 focus:outline-none focus:bg-opacity-100 transition-all ease-out`}
+        } px-4 py-2 pl-14 rounded-lg bg-black bg-opacity-50 lg:text-2xl text-base text-white placeholder:text-opacity-50 outline-none caret-gray-400 hover:bg-opacity-75 focus:outline-none focus:bg-opacity-100 transition-all ease-out`}
         type="text"
         onChange={onChange}
         placeholder={placeholder}

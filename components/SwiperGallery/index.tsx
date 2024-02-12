@@ -17,6 +17,18 @@ export default function SwiperGallery() {
       loop={true}
       modules={[Autoplay]}
       centeredSlides={true}
+      breakpoints={{
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        640: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      }}
     >
       {galleries.map((gallery, i) => (
         <SwiperSlide key={i}>

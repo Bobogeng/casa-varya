@@ -8,30 +8,26 @@ import { kronaOne } from "@/app/fonts";
 
 export default function ContactUs() {
   return (
-    <main className="min-h-screen">
-      <article className="min-h-screen h-screen p-16 bg-[url('/images/hero-section.jpg')] bg-no-repeat bg-cover bg-center relative">
+    <main>
+      <article className="bg-[url('/images/hero-section.jpg')] bg-no-repeat bg-cover bg-center relative">
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-        <section className="relative z-10 h-full flex flex-col gap-6 justify-center">
-          <div className="relative flex flex-col p-6 gap-6 rounded-lg overflow-hidden">
+        <section className="relative z-10 h-full flex flex-col lg:gap-6 gap-4 justify-center">
+          <div className="relative flex flex-col lg:p-16 p-6 lg:gap-6 gap-4 overflow-hidden">
             <div className="-z-10 absolute inset-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-xl"></div>
             <div className="flex flex-col gap-2">
               <h1
-                className={`${kronaOne.className} text-4xl text-white leading-normal`}
+                className={`${kronaOne.className} lg:text-4xl text-xl text-white lg:leading-normal leading-normal`}
               >
                 Connect with Us for <span className="text-brown">Your</span>{" "}
                 Dream Home.
               </h1>
-              <p className="text-xl text-white text-opacity-50 leading-normal">
+              <p className="lg:text-xl text-base text-white text-opacity-50 lg:leading-normal leading-normal">
                 Reach out to us today and let our expert team guide you towards
                 your perfect European luxury lifestyle. Contact us now to turn
-                your dream into reality.{" "}
-                <span className="text-white text-opacity-100">
-                  Call to Action for booking fee (20 Million Rupiah)
-                </span>
-                .
+                your dream into reality.
               </p>
             </div>
-            <div className="grid grid-cols-3 gap-6">
+            <div className="flex flex-col md:grid md:grid-cols-3 md:gap-6 gap-4">
               <InputFieldIcon
                 name="name"
                 src="/icons/person.svg"
@@ -70,7 +66,7 @@ export default function ContactUs() {
                 Submit
               </Button>
               <div className="flex justify-center items-center">
-                <p className="text-white text-opacity-50 text-3xl text-center font-bold">
+                <p className="text-white text-opacity-50 lg:text-3xl text-lg text-center font-bold">
                   Or you can send it via
                 </p>
               </div>

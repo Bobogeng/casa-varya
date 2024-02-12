@@ -19,7 +19,7 @@ export default function Button({
     <button
       className={`${
         full ? "w-full" : "w-fit"
-      } px-6 py-3 flex items-center gap-4 rounded-full ${
+      } lg:px-6 px-4 lg:py-3 py-2 flex items-center gap-4 rounded-full ${
         secondary
           ? "bg-black bg-opacity-80 hover:bg-opacity-100 active:bg-brown text-white"
           : active
@@ -38,7 +38,9 @@ export default function Button({
             : "w-fit lg:justify-start justify-between"
         }`}
       >
-        <p className="w-full font-bold lg:text-4xl text-lg">{children}</p>
+        <p className="w-full font-bold xl:text-4xl lg:text-2xl text-lg text-start">
+          {children}
+        </p>
         {trailIcon}
       </div>
     </button>

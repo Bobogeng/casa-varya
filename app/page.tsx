@@ -10,22 +10,22 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       <article className="min-h-screen h-screen p-6 sm:p-16 bg-[url('/images/hero-section.jpg')] bg-no-repeat bg-cover bg-center relative">
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-        <section className="relative z-10 h-full flex flex-col gap-6 justify-center">
+        <section className="relative z-10 h-full flex flex-col lg:gap-6 gap-4 justify-center lg:items-start items-center lg:text-start text-center">
           <h1
-            className={`max-w-[1116px] ${kronaOne.className} xl:text-8xl lg:text-6xl sm:text-4xl text-2xl text-brown leading-normal sm:leading-normal lg:leading-normal xl:leading-normal`}
+            className={`max-w-[1116px] ${kronaOne.className} xl:text-8xl lg:text-6xl sm:text-4xl text-3xl text-brown leading-normal sm:leading-normal lg:leading-normal xl:leading-normal`}
           >
             <span className="text-white">Step into Your</span> European Luxury
             Lifestyle<span className="text-white">.</span>
           </h1>
           <ButtonAction action="whatsapp" />
-          <p className="absolute bottom-0 right-0 z-10 font-bold text-gray-400 text-end">
+          <p className="absolute bottom-0 lg:right-0 z-10 font-bold text-gray-400 lg:text-end text-center">
             By Mudaya Land, in association with Tamara group
           </p>
         </section>
       </article>
       <article className={`${kronaOne.className}`}>
         <section className="p-6 sm:p-16">
-          <h1 className="bg-white text-black lg:text-7xl text-2xl lg:leading-normal leading-normal">
+          <h1 className="text-black lg:text-7xl text-2xl lg:leading-normal leading-normal">
             <span className="text-brown">A place</span> where elegance begins
             and endures<span className="text-brown">.</span>
           </h1>
@@ -34,7 +34,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black bg-opacity-80 backdrop-filter backdrop-blur-2xl"></div>
           <div className="flex-1 z-10 lg:order-1 order-2">
             <div className="flex flex-col sm:grid sm:grid-rows-3 sm:grid-cols-2 lg:text-2xl text-lg text-white">
-              <div className="lg:pl-[88px] h-full sm:border-r-2 border-b-2 border-solid border-brown border-opacity-50 overflow-hidden">
+              <div className="h-full sm:border-r-2 flex justify-center items-center border-b-2 border-solid border-brown border-opacity-50 overflow-hidden">
                 <div className="flex flex-col justify-center sm:flex-row items-center lg:flex-col gap-2 p-6 text-center transition-all ease-out hover:scale-105">
                   <div>
                     <Image
@@ -48,7 +48,7 @@ export default function Home() {
                   <p className="leading-normal">Luxury Design</p>
                 </div>
               </div>
-              <div className="border-b-2 border-solid border-brown border-opacity-50 overflow-hidden">
+              <div className="flex justify-center items-center border-b-2 border-solid border-brown border-opacity-50 overflow-hidden">
                 <div className="flex flex-col justify-center sm:flex-row items-center lg:flex-col gap-2 p-6 text-center transition-all ease-out hover:scale-105">
                   <div>
                     <Image
@@ -64,7 +64,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="lg:pl-[88px] sm:border-r-2 border-b-2 border-solid border-brown border-opacity-50 overflow-hidden">
+              <div className="sm:border-r-2 flex justify-center items-center border-b-2 border-solid border-brown border-opacity-50 overflow-hidden">
                 <div className="flex flex-col justify-center sm:flex-row items-center lg:flex-col gap-2 p-6 text-center transition-all ease-out hover:scale-105">
                   <div>
                     <Image
@@ -78,7 +78,7 @@ export default function Home() {
                   <p className="leading-normal">Community Park</p>
                 </div>
               </div>
-              <div className="border-b-2 border-solid border-brown border-opacity-50 overflow-hidden">
+              <div className="flex justify-center items-center border-b-2 border-solid border-brown border-opacity-50 overflow-hidden">
                 <div className="flex flex-col justify-center sm:flex-row items-center lg:flex-col gap-2 p-6 text-center transition-all ease-out hover:scale-105">
                   <div>
                     <Image
@@ -92,8 +92,8 @@ export default function Home() {
                   <p className="leading-normal">One-Gate System</p>
                 </div>
               </div>
-              <div className="col-span-2 overflow-hidden">
-                <div className="flex flex-col justify-center sm:flex-row items-center gap-2 p-6 lg:pl-[88px] text-center transition-all ease-out hover:scale-105">
+              <div className="flex justify-center items-center col-span-2 overflow-hidden">
+                <div className="flex flex-col justify-center sm:flex-row items-center gap-2 p-6 text-center transition-all ease-out hover:scale-105">
                   <div>
                     <Image
                       src="/images/officer.png"
@@ -130,17 +130,15 @@ export default function Home() {
               draggable={false}
             />
           </div>
-          <div className="flex flex-col p-6 gap-6">
+          <div className="flex flex-col p-6 lg:gap-6 gap-4">
             <h1
-              className={`${kronaOne.className} text-black lg:text-5xl text-xl lg:leading-normal leading-normal`}
+              className={`${kronaOne.className} text-black lg:text-5xl text-2xl lg:leading-normal leading-normal`}
             >
-              <span className="bg-white text-brown">
-                An upscale neighborhood
-              </span>{" "}
+              <span className="text-brown">An upscale neighborhood</span>{" "}
               surrounded by <b>all-rounded facilities</b> for your{" "}
               <b>on the go life</b>
             </h1>
-            <p className="lg:text-xl text-base self-end leading-normal">
+            <p className="lg:text-xl text-base self-end lg:leading-normal leading-normal">
               Mudaya Land is a renowned developer dedicated to crafting Casa
               Varya as a minimalist residential community that combines a touch
               of European grandeur, tailored for families or young individuals
@@ -149,7 +147,7 @@ export default function Home() {
           </div>
         </section>
         <section className="flex flex-col xl:grid xl:grid-rows-3 xl:grid-cols-4 lg:grid sm:grid sm:grid-rows-6 sm:grid-cols-2 text-brown lg:text-2xl text-lg font-bold">
-          <div className="flex items-center p-6 gap-2 bg-black text-white border-solid border-[1px] border-brown">
+          <div className="flex flex-col items-center p-6 gap-2 bg-black text-white text-center-[1px] border-solid border-[1px] border-l-0 border-r-0 sm:border-r-[1px] border-brown">
             <div className="relative lg:w-[78px] lg:h-[78px] w-[48px] h-[48px] min-w-[48px] min-h-[48px] max-w-[78px] max-h-[78px]">
               <Image
                 src="/images/map.png"
@@ -160,8 +158,8 @@ export default function Home() {
             </div>
             <p>Map Labels</p>
           </div>
-          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
-            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+          <div className="bg-beige border-solid border-[1px] border-brown border-l-0 border-r-0 lg:border-l-[1px] lg:border-r-[1px] sm:border-l-[1px] overflow-hidden">
+            <div className="flex flex-col items-center p-6 gap-2 transition-all ease-out hover:scale-105 text-center">
               <div className="relative lg:w-[78px] lg:h-[78px] w-[48px] h-[48px] min-w-[48px] min-h-[48px] max-w-[78px] max-h-[78px]">
                 <Image
                   src="/images/highway.png"
@@ -170,11 +168,13 @@ export default function Home() {
                   draggable={false}
                 />
               </div>
-              <p className="w-full">{`<`}1,500 meters to Tolls/Highway</p>
+              <p className="sm:text-base text-sm">
+                {`<`}1,500 meters to Tolls/Highway
+              </p>
             </div>
           </div>
-          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
-            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+          <div className="bg-beige border-solid border-[1px] border-brown border-l-0 border-r-0 sm:border-r-[1px] lg:border-l-[1px] overflow-hidden">
+            <div className="flex flex-col items-center p-6 gap-2 transition-all ease-out hover:scale-105 text-center">
               <div className="relative lg:w-[78px] lg:h-[78px] w-[48px] h-[48px] min-w-[48px] min-h-[48px] max-w-[78px] max-h-[78px]">
                 <Image
                   src="/images/police.png"
@@ -183,11 +183,13 @@ export default function Home() {
                   draggable={false}
                 />
               </div>
-              <p>{`<`}1,800 meters to nearest District Police</p>
+              <p className="sm:text-base text-sm">
+                {`<`}1,800 meters to nearest District Police
+              </p>
             </div>
           </div>
-          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
-            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+          <div className="bg-beige border-solid border-[1px] border-brown border-l-0 border-r-0 lg:border-l-[1px] sm:border-l-[1px] overflow-hidden">
+            <div className="flex flex-col items-center p-6 gap-2 transition-all ease-out hover:scale-105 text-center">
               <div className="relative lg:w-[78px] lg:h-[78px] w-[48px] h-[48px] min-w-[48px] min-h-[48px] max-w-[78px] max-h-[78px]">
                 <Image
                   src="/images/church.png"
@@ -196,11 +198,13 @@ export default function Home() {
                   draggable={false}
                 />
               </div>
-              <p>{`<`}300 meters to nearest Church</p>
+              <p className="sm:text-base text-sm">
+                {`<`}300 meters to nearest Church
+              </p>
             </div>
           </div>
-          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
-            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+          <div className="bg-beige border-solid border-[1px] border-brown border-l-0 border-r-0 sm:border-r-[1px] overflow-hidden">
+            <div className="flex flex-col items-center p-6 gap-2 transition-all ease-out hover:scale-105 text-center">
               <div className="relative lg:w-[78px] lg:h-[78px] w-[48px] h-[48px] min-w-[48px] min-h-[48px] max-w-[78px] max-h-[78px]">
                 <Image
                   src="/images/plane.png"
@@ -209,11 +213,13 @@ export default function Home() {
                   draggable={false}
                 />
               </div>
-              <p>{`<`}20 minutes to Jakarta Int&apos;l Airport</p>
+              <p className="sm:text-base text-sm">
+                {`<`}20 minutes to Jakarta Int&apos;l Airport
+              </p>
             </div>
           </div>
-          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
-            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+          <div className="bg-beige border-solid border-[1px] border-brown border-l-0 border-r-0 lg:border-l-[1px] lg:border-r-[1px] sm:border-l-[1px] overflow-hidden">
+            <div className="flex flex-col items-center p-6 gap-2 transition-all ease-out hover:scale-105 text-center">
               <div className="relative lg:w-[78px] lg:h-[78px] w-[48px] h-[48px] min-w-[48px] min-h-[48px] max-w-[78px] max-h-[78px]">
                 <Image
                   src="/images/bank.png"
@@ -222,11 +228,13 @@ export default function Home() {
                   draggable={false}
                 />
               </div>
-              <p>{`<`}200 meters to nearest ATM/Bank</p>
+              <p className="sm:text-base text-sm">
+                {`<`}200 meters to nearest ATM/Bank
+              </p>
             </div>
           </div>
-          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
-            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+          <div className="bg-beige border-solid border-[1px] border-brown border-l-0 border-r-0 sm:border-r-[1px] lg:border-l-[1px] overflow-hidden">
+            <div className="flex flex-col items-center p-6 gap-2 transition-all ease-out hover:scale-105 text-center">
               <div className="relative lg:w-[78px] lg:h-[78px] w-[48px] h-[48px] min-w-[48px] min-h-[48px] max-w-[78px] max-h-[78px]">
                 <Image
                   src="/images/mosque.png"
@@ -235,11 +243,13 @@ export default function Home() {
                   draggable={false}
                 />
               </div>
-              <p>{`<`}300 meters to nearest Mosque</p>
+              <p className="sm:text-base text-sm">
+                {`<`}300 meters to nearest Mosque
+              </p>
             </div>
           </div>
-          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
-            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+          <div className="bg-beige border-solid border-[1px] border-brown border-l-0 border-r-0 lg:border-l-[1px] sm:border-l-[1px] overflow-hidden">
+            <div className="flex flex-col items-center p-6 gap-2 transition-all ease-out hover:scale-105 text-center">
               <div className="relative lg:w-[78px] lg:h-[78px] w-[48px] h-[48px] min-w-[48px] min-h-[48px] max-w-[78px] max-h-[78px]">
                 <Image
                   src="/images/city.png"
@@ -248,11 +258,13 @@ export default function Home() {
                   draggable={false}
                 />
               </div>
-              <p>{`<`}60 minutes to SCBD/City Center</p>
+              <p className="sm:text-base text-sm">
+                {`<`}60 minutes to SCBD/City Center
+              </p>
             </div>
           </div>
-          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
-            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+          <div className="bg-beige border-solid border-[1px] border-brown border-l-0 border-r-0 sm:border-r-[1px] overflow-hidden">
+            <div className="flex flex-col items-center p-6 gap-2 transition-all ease-out hover:scale-105 text-center">
               <div className="relative lg:w-[78px] lg:h-[78px] w-[48px] h-[48px] min-w-[48px] min-h-[48px] max-w-[78px] max-h-[78px]">
                 <Image
                   src="/images/hospital.png"
@@ -261,11 +273,13 @@ export default function Home() {
                   draggable={false}
                 />
               </div>
-              <p>{`<`}1,700 meters to nearest Hospital</p>
+              <p className="sm:text-base text-sm">
+                {`<`}1,700 meters to nearest Hospital
+              </p>
             </div>
           </div>
-          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
-            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+          <div className="bg-beige border-solid border-[1px] border-brown border-l-0 border-r-0 lg:border-l-[1px] lg:border-r-[1px] sm:border-l-[1px] overflow-hidden">
+            <div className="flex flex-col items-center p-6 gap-2 transition-all ease-out hover:scale-105 text-center">
               <div className="relative lg:w-[78px] lg:h-[78px] w-[48px] h-[48px] min-w-[48px] min-h-[48px] max-w-[78px] max-h-[78px]">
                 <Image
                   src="/images/cart.png"
@@ -274,11 +288,13 @@ export default function Home() {
                   draggable={false}
                 />
               </div>
-              <p>{`<`}750 meters to Convenience Store</p>
+              <p className="sm:text-base text-sm">
+                {`<`}750 meters to Convenience Store
+              </p>
             </div>
           </div>
-          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
-            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+          <div className="bg-beige border-solid border-[1px] border-brown border-l-0 border-r-0 sm:border-r-[1px] lg:border-l-[1px] overflow-hidden">
+            <div className="flex flex-col items-center p-6 gap-2 transition-all ease-out hover:scale-105 text-center">
               <div className="relative lg:w-[78px] lg:h-[78px] w-[48px] h-[48px] min-w-[48px] min-h-[48px] max-w-[78px] max-h-[78px]">
                 <Image
                   src="/images/school.png"
@@ -287,11 +303,11 @@ export default function Home() {
                   draggable={false}
                 />
               </div>
-              <p>{`<`}600 meters to School</p>
+              <p className="sm:text-base text-sm">{`<`}600 meters to School</p>
             </div>
           </div>
-          <div className="bg-beige border-solid border-[1px] border-brown overflow-hidden">
-            <div className="flex items-center p-6 gap-2 transition-all ease-out hover:scale-105">
+          <div className="bg-beige border-solid border-[1px] border-brown border-l-0 border-r-0 lg:border-l-[1px] sm:border-l-[1px] overflow-hidden">
+            <div className="flex flex-col items-center p-6 gap-2 transition-all ease-out hover:scale-105 text-center">
               <div className="relative lg:w-[78px] lg:h-[78px] w-[48px] h-[48px] min-w-[48px] min-h-[48px] max-w-[78px] max-h-[78px]">
                 <Image
                   src="/images/park.png"
@@ -300,23 +316,25 @@ export default function Home() {
                   draggable={false}
                 />
               </div>
-              <p>{`<`}350 meters to Kids Friendly Park</p>
+              <p className="sm:text-base text-sm">
+                {`<`}350 meters to Kids Friendly Park
+              </p>
             </div>
           </div>
         </section>
       </article>
       <article className="bg-white">
-        <section className="flex flex-col gap-6 p-6 sm:p-16">
+        <section className="flex flex-col lg:gap-6 gap-4 p-6 sm:p-16">
           <h1
-            className={`${kronaOne.className} lg:text-5xl text-xl text-brown leading-normal uppercase`}
+            className={`${kronaOne.className} lg:text-5xl text-2xl text-brown leading-normal uppercase`}
           >
             Master Plan
           </h1>
-          <p className="lg:text-xl text-base leading-normal">
+          <p className="lg:text-xl text-base lg:leading-normal leading-normal">
             The development of classic residential clusters, mindfully
             constructed on suitable location.
           </p>
-          <div className="flex flex-col gap-6 lg:grid lg:grid-cols-4">
+          <div className="flex flex-col lg:gap-6 gap-4 lg:grid lg:grid-cols-4">
             <div className="w-full h-48 sm:h-72 md:h-96 lg:h-full relative">
               <Image
                 className="hidden lg:block object-contain transition-all ease-out hover:scale-105"
@@ -335,61 +353,81 @@ export default function Home() {
             </div>
             <div className="flex flex-col md:col-span-3 md:grid md:grid-cols-2 gap-2 text-brown">
               <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105 break-words">
-                <h2 className={`${kronaOne.className} text-xl uppercase`}>
+                <h2
+                  className={`${kronaOne.className} lg:text-xl text-lg uppercase`}
+                >
                   Foundation
                 </h2>
                 <p className="font-medium">Concrete pile</p>
               </div>
               <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105 break-words">
-                <h2 className={`${kronaOne.className} text-xl uppercase`}>
+                <h2
+                  className={`${kronaOne.className} lg:text-xl text-lg uppercase`}
+                >
                   Structure
                 </h2>
                 <p className="font-medium">Reinforced concrete</p>
               </div>
               <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105 break-words">
-                <h2 className={`${kronaOne.className} text-xl uppercase`}>
+                <h2
+                  className={`${kronaOne.className} lg:text-xl text-lg uppercase`}
+                >
                   Wall
                 </h2>
                 <p className="font-medium">Hebel brick masonry plus cement</p>
               </div>
               <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105 break-words">
-                <h2 className={`${kronaOne.className} text-xl uppercase`}>
+                <h2
+                  className={`${kronaOne.className} lg:text-xl text-lg uppercase`}
+                >
                   Plafond
                 </h2>
                 <p className="font-medium">Painted gypsum board</p>
               </div>
               <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105 break-words">
-                <h2 className={`${kronaOne.className} text-xl uppercase`}>
+                <h2
+                  className={`${kronaOne.className} lg:text-xl text-lg uppercase`}
+                >
                   Roof Structure
                 </h2>
                 <p className="font-medium">Light steel</p>
               </div>
               <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105 break-words">
-                <h2 className={`${kronaOne.className} text-xl uppercase`}>
+                <h2
+                  className={`${kronaOne.className} lg:text-xl text-lg uppercase`}
+                >
                   Roof
                 </h2>
                 <p className="font-medium">Concrete roof tile</p>
               </div>
               <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105 break-words">
-                <h2 className={`${kronaOne.className} text-xl uppercase`}>
+                <h2
+                  className={`${kronaOne.className} lg:text-xl text-lg uppercase`}
+                >
                   Floor
                 </h2>
                 <p className="font-medium">Granite tile & ceramic</p>
               </div>
               <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105 break-words">
-                <h2 className={`${kronaOne.className} text-xl uppercase`}>
+                <h2
+                  className={`${kronaOne.className} lg:text-xl text-lg uppercase`}
+                >
                   Doors
                 </h2>
                 <p className="font-medium">Solid engineering, aluminum frame</p>
               </div>
               <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105 break-words">
-                <h2 className={`${kronaOne.className} text-xl uppercase`}>
+                <h2
+                  className={`${kronaOne.className} lg:text-xl text-lg uppercase`}
+                >
                   Sanitaire
                 </h2>
                 <p className="font-medium">Toilet seat (ex. Toto)</p>
               </div>
               <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105 break-words">
-                <h2 className={`${kronaOne.className} text-xl uppercase`}>
+                <h2
+                  className={`${kronaOne.className} lg:text-xl text-lg uppercase`}
+                >
                   Water Supply
                 </h2>
                 <ul className="list-disc list-inside pl-2 font-medium ">
@@ -403,7 +441,7 @@ export default function Home() {
           </div>
           <div className="w-full flex flex-col p-4 gap-4 bg-white border-solid border-[1px] border-brown break-words">
             <h2
-              className={`${kronaOne.className} text-xl text-brown uppercase`}
+              className={`${kronaOne.className} lg:text-xl text-lg text-brown uppercase`}
             >
               Additional Facilities :
             </h2>
@@ -421,16 +459,30 @@ export default function Home() {
         </section>
       </article>
       <HouseTypes />
-      <article className={`${kronaOne.className}`}>
+      <article>
         <section className="p-6 sm:p-16">
-          <h1 className="text-black lg:text-5xl text-xl text-center leading-normal">
+          <h1
+            className={`${kronaOne.className} text-black lg:text-5xl text-2xl text-center lg:leading-normal leading-normal`}
+          >
             <span className="text-brown">The Gateway</span> to Your{" "}
             <span className="text-brown">European Lifestyle</span> - Enjoy Your
             Dream <span className="text-brown">Home at Casa Varya</span>.
           </h1>
         </section>
-        <section className="pb-16">
+        <section className="sm:pb-16">
           <SwiperGallery />
+        </section>
+        <section className="bg-beige flex flex-col items-center p-6 sm:p-16 sm:gap-12 gap-6">
+          <p
+            className={`max-w-[1002px] ${kronaOne.className} text-brown lg:text-3xl text-xl text-center lg:leading-normal leading-normal`}
+          >
+            Call to Action for <span className="text-black">booking fee</span>
+          </p>
+          <p
+            className={`max-w-[1002px] ${kronaOne.className} text-brown lg:text-5xl text-2xl text-center lg:leading-normal leading-normal`}
+          >
+            20 Million
+          </p>
         </section>
       </article>
       <ContactUs />

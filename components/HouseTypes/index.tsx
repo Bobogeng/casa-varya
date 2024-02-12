@@ -29,14 +29,14 @@ export default function HouseTypes() {
 
   return (
     <article className="bg-beige">
-      <section className="flex flex-col lg:grid lg:grid-cols-3 gap-6 lg:p-16 p-6 text-brown">
-        <div className="flex flex-col justify-center gap-6">
+      <section className="flex flex-col lg:grid lg:grid-cols-3 lg:gap-6 gap-4 lg:p-16 p-6 text-brown">
+        <div className="flex flex-col justify-center lg:gap-6 gap-4">
           <h1
-            className={`${kronaOne.className} lg:text-5xl text-xl leading-normal uppercase`}
+            className={`${kronaOne.className} lg:text-5xl text-xl lg:leading-normal leading-normal uppercase`}
           >
             House Type
           </h1>
-          <p className="lg:text-xl text-base leading-normal">
+          <p className="lg:text-xl text-base lg:leading-normal leading-normal">
             Indulge in European luxury living with this exquisite abode.
           </p>
           {houseTypes.map((house, i) => {
@@ -44,10 +44,12 @@ export default function HouseTypes() {
               return (
                 <Button
                   leadingIcon={
-                    <p className="font-bold lg:text-4xl text-lg">{i}</p>
+                    <p className="font-bold xl:text-4xl lg:text-2xl text-lg">
+                      {++i}
+                    </p>
                   }
                   full
-                  onClick={() => handleHouseSelect(i)}
+                  onClick={() => handleHouseSelect(--i)}
                   key={i}
                   active
                 >
@@ -58,11 +60,13 @@ export default function HouseTypes() {
               return (
                 <Button
                   leadingIcon={
-                    <p className="font-bold lg:text-4xl text-lg">{i}</p>
+                    <p className="font-bold xl:text-4xl lg:text-2xl text-lg">
+                      {++i}
+                    </p>
                   }
                   secondary
                   full
-                  onClick={() => handleHouseSelect(i)}
+                  onClick={() => handleHouseSelect(--i)}
                   key={i}
                 >
                   {house.type}
@@ -73,7 +77,7 @@ export default function HouseTypes() {
         </div>
         {selectedHouse && (
           <div
-            className={`h-[256px] sm:h-[430px] md:h-[500px] lg:h-[700px] grid grid-cols-2 gap-2`}
+            className={`h-[300px] sm:h-[430px] md:h-[500px] lg:h-[700px] grid grid-cols-2 gap-2`}
           >
             <div className="w-full relative">
               <Image
@@ -96,15 +100,15 @@ export default function HouseTypes() {
           </div>
         )}
         {selectedHouse && (
-          <div className="flex flex-col justify-center gap-6">
+          <div className="flex flex-col justify-center lg:items-start items-center text-center lg:text-start lg:gap-6 gap-4">
             <h2
-              className={`${kronaOne.className} text-4xl leading-normal uppercase`}
+              className={`${kronaOne.className} lg:text-4xl text-xl lg:leading-normal leading-normal uppercase`}
             >
               {selectedHouse.type}
             </h2>
-            <div className="flex flex-wrap sm:flex-row items-center gap-2">
-              <div className="flex items-center gap-2">
-                <div>
+            <div className="flex flex-wrap sm:flex-row justify-center items-center gap-2">
+              <div className="relative flex items-center gap-2">
+                <div className="lg:w-[78px] lg:h-[78px] w-[48px] h-[48px] min-w-[48px] min-h-[48px]">
                   <Image
                     src="/images/bed.png"
                     alt="Bed"
@@ -117,8 +121,8 @@ export default function HouseTypes() {
                   {selectedHouse.bed}
                 </p>
               </div>
-              <div className="flex items-center gap-2">
-                <div>
+              <div className="relative flex items-center gap-2">
+                <div className="lg:w-[78px] lg:h-[78px] w-[48px] h-[48px] min-w-[48px] min-h-[48px]">
                   <Image
                     src="/images/car.png"
                     alt="Car"
@@ -131,8 +135,8 @@ export default function HouseTypes() {
                   {selectedHouse.car}
                 </p>
               </div>
-              <div className="flex items-center gap-2">
-                <div>
+              <div className="relative flex items-center gap-2">
+                <div className="lg:w-[78px] lg:h-[78px] w-[48px] h-[48px] min-w-[48px] min-h-[48px]">
                   <Image
                     src="/images/bath.png"
                     alt="Bath"
@@ -146,10 +150,10 @@ export default function HouseTypes() {
                 </p>
               </div>
             </div>
-            <div className="flex lg:flex-row flex-col gap-2">
+            <div className="flex sm:flex-row flex-col gap-2">
               <div className="flex-1 flex flex-col gap-2">
                 <h3
-                  className={`${kronaOne.className} text-2xl leading-normal uppercase`}
+                  className={`${kronaOne.className} lg:text-2xl text-lg lg:leading-normal leading-normal uppercase`}
                 >
                   1st Floor
                 </h3>
@@ -161,7 +165,7 @@ export default function HouseTypes() {
               </div>
               <div className="flex-1 flex flex-col gap-2">
                 <h3
-                  className={`${kronaOne.className} text-2xl leading-normal uppercase`}
+                  className={`${kronaOne.className} lg:text-2xl text-lg lg:leading-normal leading-normal uppercase`}
                 >
                   2nd Floor
                 </h3>
