@@ -24,10 +24,10 @@ export default function Home() {
       </article>
       <article className={`font-display`}>
         <section className="p-6 sm:p-16">
-          <h1 className="text-black lg:text-7xl text-2xl lg:leading-normal leading-normal">
+          <h2 className="text-black lg:text-7xl text-2xl lg:leading-normal leading-normal">
             <span className="text-brown">A place</span> where elegance begins
             and endures<span className="text-brown">.</span>
-          </h1>
+          </h2>
         </section>
         <section className="flex flex-col lg:flex-row bg-[url('/images/hero-section.jpg')] bg-no-repeat bg-cover bg-center relative">
           <div className="absolute inset-0 bg-black bg-opacity-80 backdrop-filter backdrop-blur-2xl"></div>
@@ -130,13 +130,13 @@ export default function Home() {
             />
           </div>
           <div className="flex flex-col p-6 lg:gap-6 gap-4">
-            <h1
+            <h2
               className={`font-display text-black lg:text-5xl text-2xl lg:leading-normal leading-normal`}
             >
               <span className="text-brown">An upscale neighborhood</span>{" "}
               surrounded by <b>all-rounded facilities</b> for your{" "}
               <b>on the go life</b>
-            </h1>
+            </h2>
             <p className="lg:text-xl text-base self-end lg:leading-normal leading-normal">
               Mudaya Land is a renowned developer dedicated to crafting Casa
               Varya as a minimalist residential community that combines a touch
@@ -324,11 +324,11 @@ export default function Home() {
       </article>
       <article className="bg-white">
         <section className="flex flex-col lg:gap-6 gap-4 p-6 sm:p-16">
-          <h1
+          <h2
             className={`font-display lg:text-5xl text-2xl text-brown leading-normal uppercase`}
           >
             Master Plan
-          </h1>
+          </h2>
           <p className="lg:text-xl text-base lg:leading-normal leading-normal">
             The development of classic residential clusters, mindfully
             constructed on suitable location.
@@ -352,63 +352,63 @@ export default function Home() {
             </div>
             <div className="flex flex-col md:col-span-3 md:grid md:grid-cols-2 gap-2 text-brown">
               <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105 break-words">
-                <h2 className={`font-display lg:text-xl text-lg uppercase`}>
+                <h3 className={`font-display lg:text-xl text-lg uppercase`}>
                   Foundation
-                </h2>
+                </h3>
                 <p className="font-medium">Concrete pile</p>
               </div>
               <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105 break-words">
-                <h2 className={`font-display lg:text-xl text-lg uppercase`}>
+                <h3 className={`font-display lg:text-xl text-lg uppercase`}>
                   Structure
-                </h2>
+                </h3>
                 <p className="font-medium">Reinforced concrete</p>
               </div>
               <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105 break-words">
-                <h2 className={`font-display lg:text-xl text-lg uppercase`}>
+                <h3 className={`font-display lg:text-xl text-lg uppercase`}>
                   Wall
-                </h2>
+                </h3>
                 <p className="font-medium">Hebel brick masonry plus cement</p>
               </div>
               <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105 break-words">
-                <h2 className={`font-display lg:text-xl text-lg uppercase`}>
+                <h3 className={`font-display lg:text-xl text-lg uppercase`}>
                   Plafond
-                </h2>
+                </h3>
                 <p className="font-medium">Painted gypsum board</p>
               </div>
               <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105 break-words">
-                <h2 className={`font-display lg:text-xl text-lg uppercase`}>
+                <h3 className={`font-display lg:text-xl text-lg uppercase`}>
                   Roof Structure
-                </h2>
+                </h3>
                 <p className="font-medium">Light steel</p>
               </div>
               <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105 break-words">
-                <h2 className={`font-display lg:text-xl text-lg uppercase`}>
+                <h3 className={`font-display lg:text-xl text-lg uppercase`}>
                   Roof
-                </h2>
+                </h3>
                 <p className="font-medium">Concrete roof tile</p>
               </div>
               <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105 break-words">
-                <h2 className={`font-display lg:text-xl text-lg uppercase`}>
+                <h3 className={`font-display lg:text-xl text-lg uppercase`}>
                   Floor
-                </h2>
+                </h3>
                 <p className="font-medium">Granite tile & ceramic</p>
               </div>
               <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105 break-words">
-                <h2 className={`font-display lg:text-xl text-lg uppercase`}>
+                <h3 className={`font-display lg:text-xl text-lg uppercase`}>
                   Doors
-                </h2>
+                </h3>
                 <p className="font-medium">Solid engineering, aluminum frame</p>
               </div>
               <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105 break-words">
-                <h2 className={`font-display lg:text-xl text-lg uppercase`}>
+                <h3 className={`font-display lg:text-xl text-lg uppercase`}>
                   Sanitaire
-                </h2>
+                </h3>
                 <p className="font-medium">Toilet seat (ex. Toto)</p>
               </div>
               <div className="flex flex-col p-6 gap-4 bg-beige transition-all ease-out hover:bg-black hover:text-white hover:scale-105 break-words">
-                <h2 className={`font-display lg:text-xl text-lg uppercase`}>
+                <h3 className={`font-display lg:text-xl text-lg uppercase`}>
                   Water Supply
-                </h2>
+                </h3>
                 <ul className="list-disc list-inside pl-2 font-medium ">
                   <li>Septic tanks (ex. Biofil filter)</li>
                   <li>Water Torren 750L (ex. Penguin)</li>
@@ -419,11 +419,11 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full flex flex-col p-4 gap-4 bg-white border-solid border-[1px] border-brown break-words">
-            <h2
+            <h3
               className={`font-display lg:text-xl text-lg text-brown uppercase`}
             >
               Additional Facilities :
-            </h2>
+            </h3>
             <ul className="md:columns-2 list-disc list-inside pl-2 font-medium">
               <li>Clean water installation</li>
               <li>Pulling telephone cables</li>
@@ -440,13 +440,13 @@ export default function Home() {
       <HouseTypes />
       <article>
         <section className="p-6 sm:p-16">
-          <h1
+          <h2
             className={`font-display text-black lg:text-5xl text-2xl text-center lg:leading-normal leading-normal`}
           >
             <span className="text-brown">The Gateway</span> to Your{" "}
             <span className="text-brown">European Lifestyle</span> - Enjoy Your
             Dream <span className="text-brown">Home at Casa Varya</span>.
-          </h1>
+          </h2>
         </section>
         <section className="sm:pb-16">
           <SwiperGallery />

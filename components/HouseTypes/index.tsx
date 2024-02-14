@@ -19,11 +19,11 @@ export default function HouseTypes() {
     <article className="bg-beige">
       <section className="flex flex-col lg:grid lg:grid-cols-3 lg:gap-6 gap-4 lg:p-16 p-6 text-brown">
         <div className="flex flex-col justify-center lg:gap-6 gap-4">
-          <h1
+          <h2
             className={`font-display lg:text-5xl text-xl lg:leading-normal leading-normal uppercase`}
           >
             House Type
-          </h1>
+          </h2>
           <p className="lg:text-xl text-base lg:leading-normal leading-normal">
             Indulge in European luxury living with this exquisite abode.
           </p>
@@ -89,11 +89,11 @@ export default function HouseTypes() {
         )}
         {selectedHouse && (
           <div className="flex flex-col justify-center lg:items-start items-center text-center lg:text-start lg:gap-6 gap-4">
-            <h2
+            <h3
               className={`font-display lg:text-4xl text-xl lg:leading-normal leading-normal uppercase`}
             >
               {selectedHouse.type}
-            </h2>
+            </h3>
             <div className="flex flex-wrap sm:flex-row lg:justify-start justify-center items-center gap-2">
               <div className="relative flex items-center gap-2">
                 <div className="lg:w-[78px] lg:h-[78px] w-[48px] h-[48px] min-w-[48px] min-h-[48px]">

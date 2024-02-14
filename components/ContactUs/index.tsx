@@ -88,12 +88,12 @@ export default function ContactUs() {
           <div className="relative flex flex-col lg:p-16 p-6 lg:gap-6 gap-4 overflow-hidden">
             <div className="-z-10 absolute inset-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-xl"></div>
             <div className="flex flex-col gap-2">
-              <h1
+              <h2
                 className={`font-display lg:text-4xl text-xl text-white lg:leading-normal leading-normal`}
               >
                 Connect with Us for <span className="text-brown">Your</span>{" "}
                 Dream Home.
-              </h1>
+              </h2>
               <p className="lg:text-xl text-base text-white text-opacity-50 lg:leading-normal leading-normal">
                 Reach out to us today and let our expert team guide you towards
                 your perfect European luxury lifestyle. Contact us now to turn
