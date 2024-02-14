@@ -16,6 +16,11 @@
   }
 }
 
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px #161616 inset !important;
+  -webkit-text-fill-color: white !important;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

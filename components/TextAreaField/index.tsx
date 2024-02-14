@@ -6,7 +6,9 @@ export default function TextAreaField({
   full,
 }: {
   name: string;
-  onChange?: () => void;
+  onChange?: (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => void;
   placeholder?: string;
   value?: string | number;
   full?: boolean;

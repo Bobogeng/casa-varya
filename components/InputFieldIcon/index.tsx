@@ -10,7 +10,9 @@ export default function InputFieldIcon({
 }: {
   name: string;
   src: string;
-  onChange?: () => void;
+  onChange?: (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => void;
   placeholder?: string;
   value?: string | number;
   full?: boolean;

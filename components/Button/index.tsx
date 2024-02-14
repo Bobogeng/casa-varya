@@ -6,6 +6,7 @@ export default function Button({
   secondary,
   full,
   bold,
+  type,
   onClick,
 }: {
   children: React.ReactNode;
@@ -15,6 +16,7 @@ export default function Button({
   secondary?: boolean;
   full?: boolean;
   bold?: boolean;
+  type?: "submit";
   onClick?: () => void;
 }) {
   return (
@@ -31,6 +33,7 @@ export default function Button({
       aria-label="Button"
       onClick={!active ? onClick : undefined}
       disabled={active}
+      type={type}
     >
       {leadingIcon}
       <div
